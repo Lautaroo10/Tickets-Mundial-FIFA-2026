@@ -36,6 +36,65 @@ export default function Page() {
             <button className="comprar">Comprar</button>
           </div>
         </div>
+
+
+        <div className="partidos">
+          <div className="parte-arriba">
+            <p className="dia-numero">22</p>
+            <div className="fecha">
+              <p className="dia">Lunes</p>
+              <p className="hora">14:00</p>
+            </div>
+            <img className="img-logo-mundial" src="/Logo-Copa-Mundial.png" alt="logo" />
+          </div>
+
+          <div className="parte-abajo">
+            <div className="escudos">
+              <img className="img-escudos-local" src="/logo-argentina.png" />
+              <p className="vs">VS.</p>
+              <img className="img-escudos-visitante" src="/logo-austria.png" />
+            </div>
+
+            <h2 className="selecciones">ARGENTINA - AUSTRIA</h2>
+            <p className="estadio">AT&T Stadium</p>
+            <div className="linea-divisora"></div>
+
+            <button className="comprar">Comprar</button>
+          </div>
+        </div>
+
+
+
+        <div className="partidos">
+          <div className="parte-arriba">
+            <p className="dia-numero">27</p>
+            <div className="fecha">
+              <p className="dia">Sabado</p>
+              <p className="hora">23:00</p>
+            </div>
+            <img className="img-logo-mundial" src="/Logo-Copa-Mundial.png" alt="logo" />
+          </div>
+
+          <div className="parte-abajo">
+            <div className="escudos">
+              <img className="img-escudos-local" src="/logo-argentina.png" />
+              <p className="vs">VS.</p>
+              <img className="img-escudos-visitante" src="/logo-jordania.png" />
+            </div>
+
+            <h2 className="selecciones">ARGENTINA - JORDANIA</h2>
+            <p className="estadio">AT&T Stadium</p>
+            <div className="linea-divisora"></div>
+
+            <button className="comprar">Comprar</button>
+          </div>
+        </div>
+
+
+
+
+
+
       </main>
     </>
   )
