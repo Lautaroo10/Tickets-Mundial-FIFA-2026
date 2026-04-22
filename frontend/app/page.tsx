@@ -19,7 +19,6 @@ export default function Page() {
               <p className="dia">Martes</p>
               <p className="hora">22:00</p>
             </div>
-
             <img className="img-logo-mundial" src="/Logo-Copa-Mundial.png" alt="logo" />
           </div>
 
@@ -32,7 +31,7 @@ export default function Page() {
 
             <h2 className="selecciones">ARGENTINA - ARGELIA</h2>
             <p className="estadio">Arrowhead Stadium</p>
-            <img className="linea-negra" src="/linea-negra.png" alt="linea negra" />
+            <div className="linea-divisora"></div>
 
             <button className="comprar">Comprar</button>
           </div>
