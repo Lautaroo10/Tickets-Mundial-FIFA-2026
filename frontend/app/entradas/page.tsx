@@ -30,9 +30,9 @@ export default function PaginaCompra() {
                 <div className="compra-container">
 
 
-                    <div className="compra-izquierda">
 
-                        <label className="label">Sector</label>
+                    <div className="sector">
+                        <label className="label-sector">Sector</label>
                         <select
                             className="selector-sector"
                             value={sector}
@@ -44,30 +44,36 @@ export default function PaginaCompra() {
                             <option value="popular">Popular</option>
                         </select>
 
-                        <p className="label">Precio por entrada</p>
-                        <p className="precio">USD {precios[sector]}</p>
+                    </div>
 
-                        <p className="label">Cantidad de entradas</p>
+                    <div className="box-precio">
+                        <p className="label-precio">Precio por entrada</p>
+                        <p className="precio">USD {precios[sector]}</p>
+                    </div>
+
+                    <div className="box-cantidad">
+                        <p className="label-cantidad">Cantidad de entradas</p>
                         <div className="cantidad-container">
                             <button className="btn-cantidad" onClick={() => setCantidad(Math.max(1, cantidad - 1))}>−</button>
                             <span className="cantidad-numero">{cantidad}</span>
-                            <button className="btn-cantidad" onClick={() => setCantidad(Math.min(10, cantidad + 1))}>+</button>
+                            <button className="btn-cantidad" onClick={() => setCantidad(Math.min(6, cantidad + 1))}>+</button>
                         </div>
-
-
-                        <div className="referencias">
-                            <div className="referencia"><span className="color-ref vip-color"></span><p>VIP</p></div>
-                            <div className="referencia"><span className="color-ref platea-color"></span><p>Platea</p></div>
-                            <div className="referencia"><span className="color-ref popular-color"></span><p>Popular</p></div>
-                            <div className="referencia"><span className="color-ref nodisponible-color"></span><p>No disponible</p></div>
-                        </div>
-
                     </div>
 
-                    <div className="compra-derecha">
-                        <img className="img-estadio" src="/estadio.png" alt="Estadio" />
-                        <button className="btn-continuar">CONTINUAR →</button>
+
+
+
+
+
+                    <div className="referencias">
+                        <div className="referencia-box"><span className="color-ref vip-color"></span><p>VIP</p></div>
+                        <div className="referencia-box"><span className="color-ref platea-color"></span><p>Platea</p></div>
+                        <div className="referencia-box"><span className="color-ref popular-color"></span><p>Popular</p></div>
+                        <div className="referencia-box"><span className="color-ref nodisponible-color"></span><p>No disponible</p></div>
                     </div>
+
+                    <img className="img-estadio" src="/estadio.png" alt="Estadio" />
+                    <button className="btn-continuar">CONTINUAR →</button>
 
                 </div>
             </main>

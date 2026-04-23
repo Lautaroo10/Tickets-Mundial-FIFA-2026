@@ -5,6 +5,12 @@
   font-family: 'Arial', sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 
 
 
@@ -254,4 +260,221 @@ h1 {
 
 
 
-/* ========== Seleccion de entradas ========== */
+/* ========== Seleccion de entradas (Mobile First) ========== */
+
+.main-compra {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.compra-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.sector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+
+.label-sector {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.selector-sector {
+  padding: 0.5rem;
+  border: 2px solid #2e2d2d;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px;
+}
+
+.box-precio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 1.5rem;
+}
+
+.label-precio {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.precio {
+  font-size: 1rem;
+}
+
+.box-cantidad {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 1.5rem;
+}
+
+.label-cantidad {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.cantidad-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.5rem;
+  border: 2px solid #2e2d2d;
+  width: fit-content;
+}
+
+.btn-cantidad {
+  padding: 0.3rem 0.6rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-cantidad:active {
+  background-color: #e0e0e0;
+}
+
+.cantidad-numero {
+  padding: 0.3rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.referencias {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+
+.referencia-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.referencia-box p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.color-ref {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.vip-color {
+  background-color: #ff8c00;
+  border: 1px solid #000000;
+}
+
+.platea-color {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+
+.popular-color {
+  background-color: #ff69b4;
+  border: 1px solid #000000;
+}
+
+.nodisponible-color {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.img-estadio {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-top: 1.5rem;
+  align-self: center;
+}
+
+.btn-continuar {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 350px;
+  align-self: center;
+}
+
+.btn-continuar:active {
+  opacity: 0.7;
+}
+
+/* --- Entradas: Tablet (480px+) --- */
+@media (min-width: 480px) {
+  .compra-container {
+    padding: 0 2rem;
+  }
+
+  .label-sector,
+  .label-precio,
+  .label-cantidad {
+    font-size: 1.2rem;
+  }
+
+  .precio {
+    font-size: 1.1rem;
+  }
+
+  .img-estadio {
+    max-width: 400px;
+  }
+
+  .btn-continuar {
+    max-width: 400px;
+    font-size: 1.1rem;
+  }
+}
+
+/* --- Entradas: Desktop (768px+) --- */
+@media (min-width: 768px) {
+  .compra-container {
+    max-width: 600px;
+    padding: 0 2rem;
+  }
+
+  .label-sector,
+  .label-precio,
+  .label-cantidad {
+    font-size: 1.3rem;
+  }
+
+  .img-estadio {
+    max-width: 500px;
+  }
+
+  .btn-continuar {
+    max-width: 500px;
+  }
+}
