@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 
@@ -86,7 +87,10 @@ export default function Page() {
             <p className="estadio">AT&T Stadium</p>
             <div className="linea-divisora"></div>
 
-            <button className="comprar">Comprar</button>
+            <Link href="/entradas">
+              <button className="comprar">Comprar</button>
+            </Link>
+
           </div>
         </div>
 
