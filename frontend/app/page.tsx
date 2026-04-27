@@ -34,7 +34,7 @@ export default function Page() {
             <p className="estadio">Arrowhead Stadium</p>
             <div className="linea-divisora"></div>
 
-            <Link href="/entradas">
+            <Link href="/entradas/argentina-argelia">
               <button className="comprar">Comprar</button>
             </Link>
           </div>
@@ -62,7 +62,7 @@ export default function Page() {
             <p className="estadio">AT&T Stadium</p>
             <div className="linea-divisora"></div>
 
-            <Link href="/entradas">
+            <Link href="/entradas/argentina-austria">
               <button className="comprar">Comprar</button>
             </Link>
           </div>
@@ -91,7 +91,7 @@ export default function Page() {
             <p className="estadio">AT&T Stadium</p>
             <div className="linea-divisora"></div>
 
-            <Link href="/entradas">
+            <Link href="/entradas/argentina-jordania">
               <button className="comprar">Comprar</button>
             </Link>
 

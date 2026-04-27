@@ -25,7 +25,7 @@ export default function PaginaCompra() {
             </header>
 
             <main className="main-compra">
-                <h2 className="titulo">SELECCIONÁ TUS ENTRADAS</h2>
+                <h2 className="titulo">SELECCIONÁ TUS ENTRADAS  <br />ARGENTINA VS JORDANIA</h2>
 
                 <div className="compra-container">
 
